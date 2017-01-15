@@ -3,7 +3,7 @@
     <i class="icon-calendar"></i>&nbsp;{{ article.locale_date }}
 </abbr>
 {% if article.author %}
-<br/><a href="{{ SITEURL }}/{{ article.author.url }}"><i class="icon-user"></i>&nbsp;{{ article.author }}</a>
+<a href="{{ SITEURL }}/{{ article.author.url }}"><i class="icon-user"></i>&nbsp;{{ article.author }}</a>
 {% endif %}
 
 {% if PDF_GENERATOR %}

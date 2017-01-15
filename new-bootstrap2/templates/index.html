@@ -8,12 +8,14 @@
         <div class="well small">{% include "article_infos.html" %}</div>
     </div>
     <div class="span6">
-        <div class="article well">
-            <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-            <div class="summary">{{ article.summary }}
-                <a class="btn btn-small" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
-            </div>
-        </div>
+        <section id="content" class="well">
+            <article>
+                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                <div class="summary">{{ article.summary }}
+                    <a class="btn btn-small" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
+                </div>
+            </article>
+        </section>
     </div>
     <div class="span8">
         <hr />
